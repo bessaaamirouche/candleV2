@@ -39,7 +39,7 @@
               <!-- ***** Logo End ***** -->
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
-                <li class="scroll-to-section">
+                <li class="scroll-t-section">
                   <a href="index.html" class="active">Acceuil</a>
                 </li>
                 <li class="scroll-to-section">
@@ -51,7 +51,7 @@
                 <li class="has-sub">
                   <a href="javascript:void(0)">Portfolio</a>
                   <ul class="sub-menu">
-                    <li><a href="https://devchelh.github.io/My-poke-bowl/" target="_blank" >My_Poke_Bowl</a></li>
+                    <li><a href="https://devchelh.github.io/My-poke-bowl/index.html" target="_blank" >My_Poke_Bowl</a></li>
                     <li><a href="https://yashopstore.com/" target="_blank" >YaShop</a></li>
                     <li><a href="https://www.s2arental.com/" target="_blank" >s2aRental</a></li>
                   </ul>
@@ -196,7 +196,8 @@
                           <div class="left-content">
                             <h4>Amirouche B</h4>
                             <p>
-                              Expert Cloud , Sécurité et réseaux et developpeur Front-End depuis 4 ans .
+                              Expert Cloud , Sécurité et réseaux et developpeur Front-End nomade depuis 4 ans, passionné par l'IT depuis l'enfance, Je suis passionné par mon travail et je m'efforce toujours de fournir les meilleures solutions pour mes clients. 
+                              
                             </p>
                             <span><a href="#">Facebook</a></span>
                             <span><a href="#">Twitter</a></span>
@@ -204,7 +205,7 @@
                               ><a href="#">Linkedin</a></span
                             >
                             <div class="text-button">
-                              <a href="contact-us.html">Contact Member</a>
+                              <a href="contact-us.html">Contact</a>
                             </div>
                           </div>
                           <div class="right-image">
@@ -253,7 +254,7 @@
                               ><a href="#">Linkedin</a></span
                             >
                             <div class="text-button">
-                              <a href="contact-us.html">Contact Member</a>
+                              <a href="contact-us.html">Contact</a>
                             </div>
                           </div>
                           <div class="right-image">
@@ -269,7 +270,7 @@
                           <div class="left-content">
                             <h4>Poulo</h4>
                             <p>
-                              Je suis un codeur de back-end expérimenté, capable de mettre en œuvre les besoins des clients de manière efficace et pratique. Mon expertise en matière de développement de back-end me permet de fournir des solutions adaptées aux besoins spécifiques de chaque client, en prenant en compte le côté pratique de la mise en œuvre de ces solutions. Je suis passionné par mon travail et je m'efforce toujours de fournir les meilleures solutions pour mes clients.
+                              Je suis un codeur de back-end expérimenté, capable de mettre en œuvre les besoins des clients de manière efficace et pratique. Mon expertise en matière de développement de back-end me permet de fournir des solutions adaptées aux besoins spécifiques de chaque client, en prenant en compte le côté pratique de la mise en œuvre de ces solutions. 
                             </p>
                             <span><a href="#">Facebook</a></span>
                             <span><a href="#">Twitter</a></span>
@@ -277,7 +278,7 @@
                               ><a href="#">Linkedin</a></span
                             >
                             <div class="text-button">
-                              <a href="#contact">Contact Member</a>
+                              <a href="#contact">Contact</a>
                             </div>
                           </div>
                           <div class="right-image">
@@ -332,7 +333,7 @@
           </div>
           <div class="col-lg-5 align-self-center">
             <h6>Franchissez le pas avec nous!</h6>
-            <h4>Professionalisme Garanti!</h4>
+            <h4 id="pro">Professionalisme Garanti!</h4>
             <p>
               Nous sommes une agence performante et nous faisons de la magie. Nous travaillons sans relâche pour créer une expérience précieuse pour nos clients, qu'ils soient à la recherche de nouveaux logos, de sites web ou de campagnes de marketing.
             </p>
@@ -395,6 +396,70 @@
       </div>
     </section>
 
-    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      
+      //according to loftblog tut
+      $(".nav li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos,
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function () {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu, .responsive-menu, .scroll-to-section").on(
+        "click",
+        "a",
+        function (e) {
+          e.preventDefault();
+          showSection($(this).attr("href"), true);
+        }
+      );
+
+      $(window).scroll(function () {
+        checkSection();
+      });
+    </script> 
   </body>
 </html>

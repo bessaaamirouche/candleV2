@@ -663,6 +663,15 @@ header
     display: flex !important;
   }
 }
+@media screen and (max-width: 570px){
+#pro {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+}
+  
+
 
 
 /* 
@@ -1757,8 +1766,7 @@ body {
     font-size: 62px;
   }
   .header-area {
-    background: rgb(145, 31, 171) !important;
-    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+    background:url(/assets/images/Rectangle14.png)
   }
   .services .owl-nav .owl-next{
     right: -70px;
