@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 573 EduWell
-
-https://templatemo.com/tm-573-eduwell
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -153,8 +147,7 @@ body {
 .main-button-gradient a {
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(94.36deg, #828A8A 23.07%, rgba(40, 41, 46, 0.92) 96.91%, rgba(36, 206, 158, 0) 148.54%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -164,15 +157,16 @@ body {
 }
 
 .main-button-gradient a:hover {
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(117, 69, 221);
+  background: linear-gradient(94.36deg, #828A8A 23.07%, rgba(40, 41, 46, 0.92) 96.91%, rgba(36, 206, 158, 0) 148.54%);
   opacity: 0.9;
 }
 
 .white-button a {
   font-size: 13px;
-  color: rgb(145, 31, 171);
-  background-color: #fff;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(94.36deg, #828A8A 23.07%, rgba(40, 41, 46, 0.92) 96.91%, rgba(36, 206, 158, 0) 148.54%);
+
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -204,7 +198,13 @@ section {
 #contact-section {
   padding-top: 20px;
 }
-
+/*.col-lg-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+*/
 .section-heading {
   position: relative;
   z-index: 2;
@@ -217,7 +217,7 @@ section {
 .section-heading h6 {
   font-size: 13px;
   text-transform: uppercase;
-  color: #7a7a7a;
+  color: #621f81;
   font-weight: 600;
 }
 
@@ -246,8 +246,8 @@ header
 --------------------------------------------- 
 */
 .background-header {
-  background: rgb(219,138,222) !important;
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+  background: rgba(145, 31, 171, 0.407);
+  background-image: url(../images/Rectangle14.png);
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -257,8 +257,9 @@ header
 }
 
 .header-area {
-  background-image: url(../images/header-bg.png);
-  background-size: contain;
+  background: rgba(145, 31, 171, 0.454);
+  background-image: url(../images/Rectangle14.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -964,7 +965,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.png);
+  background-image: url(../images/Rectangle\ 3.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1100,6 +1101,7 @@ section.contact-us {
   background-size: cover;
   padding: 0px;
   position: relative;
+  top: 40px;
 }
 
 section.contact-us:after {
@@ -1124,7 +1126,7 @@ section.contact-us .contact-info {
 }
 
 section.contact-us .contact-info .icon i {
-  float:left;
+  /*float:left;*/
   margin-right: 15px;
   width: 50px;
   height: 50px;
@@ -1155,7 +1157,7 @@ section.contact-us .section-heading {
 }
 
 section.contact-us #contact {
-  margin-left: -100px;
+  margin-left: 24%;
   position: relative;
   z-index: 5;
   background-color: #fff;
@@ -1198,10 +1200,10 @@ section.contact-us #contact textarea {
 }
 
 section.contact-us #contact button {
-  float: right;
+  /*float: right;*/
   font-size: 13px;
   color: #fff;
-  background: rgb(145, 31, 171);
+  
   background: linear-gradient(-145deg, rgb(145, 31, 171) 0%, rgba(246,191,159,1) 100%);
   padding: 12px 30px;
   display: inline-block;
