@@ -532,7 +532,8 @@ header
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #fff;
+  background-color: rgb(53, 49, 49);
+  
 }
 
 .header-area.header-sticky {
@@ -580,7 +581,7 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    margin-left: 22px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -1767,9 +1768,7 @@ body {
   .main-banner .header-text h2 {
     font-size: 62px;
   }
-  .header-area {
-    background:url(/assets/images/Rectangle14.png)
-  }
+  
   .services .owl-nav .owl-next{
     right: -70px;
   }
