@@ -41,19 +41,19 @@
               <!-- ***** Logo End ***** -->
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
-                <li class="scroll-to-section">
+                <li class="scrol-to-section">
                   <a href="#" class="active">Acceuil</a>
                 </li>
-                <li class="scroll-to-section">
-                  <a href="about-us.html">Qui sommes Nous!</a>
+                <li class="scroll-to-sectio">
+                  <a href="apropos.html">Qui sommes Nous!</a>
                 </li>
                 <li class="scroll-to-section">
-                  <a href="#courses">Services</a>
+                  <a href="#service">Services</a>
                 </li>
                 <li class="has-sub">
                   <a href="javascript:void(0)">Portfolio</a>
                   <ul class="sub-menu">
-                    <li><a href="https://devchelh.github.io/RESTO/" target="_blank" >My_Poke_Bowl</a></li>
+                    <li><a href="https://devchelh.github.io/My-poke-bowl/" target="_blank" >My_Poke_Bowl</a></li>
                     <li><a href="https://yashopstore.com/" target="_blank" >YaShop</a></li>
                     <li><a href="https://www.s2arental.com/" target="_blank" >s2aRental</a></li>
                   </ul>
@@ -62,7 +62,7 @@
                   <a href="#testimonials">Témoignages</a>
                 </li>
                 <li class="scroll-to-section">
-                  <a href="#contact-section">Contact</a>
+                  <a href="#contact1">Contact</a>
                 </li>
               </ul>
               <a class="menu-trigger">
@@ -209,7 +209,7 @@
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
             <div class="section-heading">
-              <h6>Nos Services</h6>
+              <h6 id="service">Nos Services</h6>
               <h4>Pourquoi nous <em>Choisir</em></h4>
               <p>
                 vous pouvez compter sur notre équipe , Peu importe le besoin, Nous répondront présents et éfficaces  
@@ -340,7 +340,7 @@
               Nous faisons de la magie. Nous travaillons sans relâche pour créer une expérience précieuse pour nos clients, qu'ils soient à la recherche de nouveaux logos, de sites web ou de campagnes de marketing...
             </p>
             <div class="white-button">
-              <a href="about-us.html">En savoir plus!</a>
+              <a href="apropos.html">En savoir plus!</a>
             </div>
           </div>
         </div>
@@ -401,41 +401,6 @@
     </section>
 
     <section class="contact-us" id="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div id="map">
-              <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.220964506276!2d2.314438215674866!3d48.873064079288895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc969b3228b%3A0x30246114b9d6c03b!2sRue%20de%20Penthi%C3%A8vre%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1670450075329!5m2!1sfr!2sfr" 
-
-                width="100%"
-                height="420px"
-                frameborder="0"
-                style="
-                  border: 0;
-                  border-radius: 15px;
-                  position: relative;
-                  z-index: 2;
-                "
-                allowfullscreen=""
-              ></iframe>
-              
-              <div class="row">
-                
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="contact-info">
-                    <div class="icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <h4>Téléphone</h4>
-                    <span>0767-24-71-63</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="col-lg-4">
             <form id="contact" action="" method="post">
               <div class="row">
@@ -461,7 +426,7 @@
                     />
                   </fieldset>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12"  id="contact1">
                   <fieldset>
                     <input
                       type="text"
@@ -496,8 +461,12 @@
               </div>
             </form>
           </div>
+          
           <div class="col-lg-12">
             <ul class="social-icons">
+              <li>
+                <a href="tel:0767247163"><i class="fa fa-phone"></i></a>
+              </li>
               <li>
                 <a href="#"><i class="fa fa-facebook"></i></a>
               </li>
@@ -521,8 +490,7 @@
       </div>
     </section>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
+    
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -534,6 +502,7 @@
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+      
       //according to loftblog tut
       $(".nav li:first").addClass("active");
 
@@ -586,6 +555,7 @@
       $(window).scroll(function () {
         checkSection();
       });
-    </script>
+    </script> 
+    -->
   </body>
 </html>
