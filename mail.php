@@ -14,7 +14,7 @@
  $message = $_POST['message'];
 
  // Préparation de l'email
- $to = "destinataire@exemple.com";
+ $to = "amirouche.dev@gmail.com";
  $subject = "Nouveau message de $nom";
  $body = "Vous avez reçu un nouveau message de $nom.\n\n";
  $body .= "Email : $email\n\n";
